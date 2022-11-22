@@ -1,0 +1,27 @@
+FROM ubuntu:latest                                                                                                                                                                                                                                                            
+                                                                                                                                                                                                                                                                              
+RUN apt update && apt install  openssh-server sudo -y                                                                                                                                                                                                                         
+                                                                                                                                                                                                                                                                              
+RUN apt-get install boxes --fix-missing -y
+
+RUN apt-get install figlet -y
+
+RUN useradd -rm -d /home/challenge2 -s /bin/bash -u 1000 challenge2
+
+RUN echo "figlet -f standard "Challenge 2" | boxes -d scroll" >> home/challenge2/.bashrc 
+
+RUN chown -R root:root /home/challenge2 
+
+COPY flag.txt /home/challenge2/.flag.txt
+
+COPY README.md /home/challenge2/Readme.md
+
+RUN chmod 705 /home/challenge2
+
+RUN echo 'challenge2:EHC{s5h_f0r_7h3_4cc3sS}' | chpasswd
+
+RUN service ssh start
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd","-D"]

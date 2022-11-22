@@ -1,0 +1,27 @@
+FROM ubuntu:latest
+
+RUN apt update && apt install  openssh-server sudo -y
+
+RUN apt-get install boxes --fix-missing -y
+
+RUN apt-get install figlet -y
+
+RUN useradd -rm -d /home/challenge5 -s /bin/bash -u 1000 challenge5
+
+RUN mkdir /home/challenge5/flag
+
+RUN echo "figlet -f standard "Challenge 5" | boxes -d scroll" >> home/challenge5/.bashrc
+
+RUN chown -R root:root /home/challenge5 
+
+ADD flag /home/challenge5/flag
+
+RUN chmod 705 /home/challenge5
+
+RUN echo 'challenge5:EHC{pr1v1l3g3_35c4l4t10n}' | chpasswd
+
+RUN service ssh start
+
+EXPOSE 22
+
+CMD ["/usr/sbin/sshd","-D"]

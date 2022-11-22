@@ -1,0 +1,1 @@
+Lệnh ls có 1 option để hiển thị file ẩn đấy, hãy thử tìm nó bằng google xem.
