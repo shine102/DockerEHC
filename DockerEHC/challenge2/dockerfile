@@ -6,6 +6,8 @@ RUN apt-get install boxes --fix-missing -y
 
 RUN apt-get install figlet -y
 
+RUN unset HISTFILE
+
 RUN useradd -rm -d /home/challenge2 -s /bin/bash -u 1000 challenge2
 
 RUN echo "figlet -f standard "Challenge 2" | boxes -d scroll" >> home/challenge2/.bashrc 
