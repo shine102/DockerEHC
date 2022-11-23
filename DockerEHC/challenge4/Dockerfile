@@ -18,6 +18,7 @@ RUN chown -R root:root /home/challenge4
 # copy material
 COPY readme.md /home/challenge4/readme.md
 COPY flag.txt /home/challenge4/flag.txt
+COPY user.txt /home/challenge4/user.txt
 
 RUN chmod 704 /home/challenge4
 
