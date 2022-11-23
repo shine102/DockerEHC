@@ -20,7 +20,7 @@ ADD flag /home/challenge5/flag
 
 COPY readme.md /home/challenge5/readme.md
 
-RUN chown realstrongman:realstrongman /home/challenge5/flag/6\. trong/flag0009.txt
+RUN chown realstrongman:realstrongman /home/challenge5/flag/6.\ trong/flag0009.txt
 
 RUN chmod 704 /home/challenge5
 
