@@ -11,7 +11,7 @@ RUN useradd -s /bin/bash -u 1001 shine102
 RUN usermod -aG flag shine102
 
 
-RUN echo "figlet -f standard "Challenge 4"| boxes -d scroll; echo "Ai mới là chủ sở hữu thực sự?"" >> home/challenge4/.bashrc
+RUN echo "figlet -f standard 'Challenge 4'| boxes -d scroll; echo 'Ai mới là chủ sở hữu thực sự?'" >> home/challenge4/.bashrc
 
 RUN chown -R root:root /home/challenge4 
 
