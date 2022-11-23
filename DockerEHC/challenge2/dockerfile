@@ -10,7 +10,7 @@ RUN unset HISTFILE
 
 RUN useradd -rm -d /home/challenge2 -s /bin/bash -u 1000 challenge2
 
-RUN echo "figlet -f standard 'Challenge 2'| boxes -d scroll; echo '                    Let us start Challenge2'" >> home/challenge2/.bashrc
+RUN echo "figlet -f standard 'Challenge 2'| boxes -d scroll; echo '                    Let us start Challenge2'" > home/challenge2/.bashrc
 
 RUN chown -R root:root /home/challenge2 
 

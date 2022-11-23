@@ -1,2 +1,3 @@
-How to find a file with specific informations. "man find" will help you to find flag.
-Did you try google-ing find command in linux within multiple files?
+Hmm, lại là 1 folder với những folder con và nhiều file trông có vẻ y hệt nhau
+Có cách nào tìm kiếm (find) không nhỉ?
+Hình như người giữ file đáp án là shine102 

@@ -8,11 +8,11 @@ RUN apt-get install figlet -y
 
 RUN unset HISTFILE
 RUN useradd -rm -d /home/challenge5 -s /bin/bash -u 1000 challenge5
-RUN useradd -s /bin/bash -u 1001 realstrongman
+RUN useradd -s /bin/bash -u 1001 shine102
 
 RUN mkdir /home/challenge5/flag
 
-RUN echo "figlet -f standard 'Challenge 5'| boxes -d scroll; echo 'Thử thách này sẽ giúp bạn biết cách lấy 1 nội dung trong nhiều file 1 cách nhanh chóng bằng lệnh find'" >> home/challenge5/.bashrc
+RUN echo "figlet -f standard 'Challenge 5'| boxes -d scroll; echo 'Thử thách này sẽ giúp bạn biết cách lấy 1 nội dung trong nhiều file 1 cách nhanh chóng bằng lệnh find'" > home/challenge5/.bashrc
 
 RUN chown -R root:root /home/challenge5 
 
@@ -20,7 +20,7 @@ ADD flag /home/challenge5/flag
 
 COPY readme.md /home/challenge5/readme.md
 
-RUN chown realstrongman:realstrongman /home/challenge5/flag/6.\ trong/flag0009.txt
+RUN chown shine102:shine102 /home/challenge5/flag/5. answer/6. is it here/flag0007.txt
 
 RUN chmod 705 /home/challenge5
 
