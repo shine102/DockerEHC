@@ -1,0 +1,30 @@
+version: "3"
+services:
+  challenge1:
+    image: challenge1
+    port: 
+        - "2220:22"
+    restart: always
+  challenge2:
+    image: challenge2
+    port: 
+        - "2221:22"
+    restart: always
+  challenge3:
+    image: challenge3
+    port: 
+        - "2222:22"
+    restart: always
+  challenge4:
+    image: challenge4
+    port: 
+        - "2223:22"
+    restart: always
+  challenge5:
+    image: challenge5
+    port: 
+        - "2224:22"
+    restart: always
+
+
+

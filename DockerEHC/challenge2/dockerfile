@@ -9,16 +9,16 @@ RUN apt-get install figlet -y
 RUN unset HISTFILE
 
 RUN useradd -rm -d /home/challenge2 -s /bin/bash -u 1000 challenge2
- 
+
 RUN echo "figlet -f standard "Challenge 2"| boxes -d scroll; echo "                    Let's start Challenge2"" >> home/challenge2/.bashrc
 
 RUN chown -R root:root /home/challenge2 
 
 COPY flag.txt /home/challenge2/.flag.txt
 
-COPY README.md /home/challenge2/Readme.md
+COPY readme.md /home/challenge2/readme.md
 
-RUN chmod 705 /home/challenge2
+RUN chmod 704 /home/challenge2
 
 RUN echo 'challenge2:EHC{s5h_f0r_7h3_4cc3sS}' | chpasswd
 

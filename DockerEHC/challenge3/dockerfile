@@ -16,9 +16,9 @@ RUN chown -R root:root /home/challenge3
 
 COPY flag.txt /home/challenge3/flag.txt
 
-COPY Readme.md /home/challenge3/Readme.md
+COPY readme.md /home/challenge3/readme.md
 
-RUN chmod 705 /home/challenge3
+RUN chmod 704 /home/challenge3
 
 RUN echo 'challenge3:EHC{s0m3tHiNg_y0u_c4n7_s33}' | chpasswd
 

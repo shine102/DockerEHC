@@ -1,0 +1,22 @@
+version: "3"
+services:
+  challenge1:
+    build:
+      context: ./challenge1
+    image: challenge1
+  challenge2:
+    build:
+      context: ./challenge2
+    image: challenge2
+  challenge3:
+    build:
+      context: ./challenge3
+    image: challenge3
+  challenge4:
+    build:
+      context: ./challenge4
+    image: challenge4
+  challenge5:
+    build:
+      context: ./challenge5
+    image: challenge5
