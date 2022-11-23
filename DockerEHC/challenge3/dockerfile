@@ -18,7 +18,7 @@ COPY flag.txt /home/challenge3/flag.txt
 
 COPY readme.md /home/challenge3/readme.md
 
-RUN chmod 704 /home/challenge3
+RUN chmod 705 /home/challenge3
 
 RUN echo 'challenge3:EHC{s0m3tHiNg_y0u_c4n7_s33}' | chpasswd
 

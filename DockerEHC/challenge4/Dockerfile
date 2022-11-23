@@ -20,7 +20,7 @@ COPY readme.md /home/challenge4/readme.md
 COPY flag.txt /home/challenge4/flag.txt
 COPY user.txt /home/challenge4/user.txt
 
-RUN chmod 704 /home/challenge4
+RUN chmod 705 /home/challenge4
 
 RUN chown flag:flag /home/challenge4/flag.txt
 RUN chmod 740 /home/challenge4/flag.txt
