@@ -5,7 +5,7 @@ RUN apt-get install figlet -y
 
 RUN unset HISTFILE
 RUN useradd -rm -d /home/challenge1 -s /bin/bash -u 1000 challenge1 
-RUN echo "figlet -f standard 'Challenge 1'| boxes -d scroll; echo '                    Let's try type cat readme.md'" >> home/challenge1/.bashrc
+RUN echo "figlet -f standard 'Challenge 1'| boxes -d scroll; echo '                    Try type cat readme.md'" >> home/challenge1/.bashrc
 
 RUN chown -R root:root /home/challenge1 
 COPY flag.txt /home/challenge1/flag.txt
