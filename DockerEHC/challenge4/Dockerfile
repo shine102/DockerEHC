@@ -29,6 +29,8 @@ RUN echo 'challenge4:EHC{W0lf_1n_4_fl0ck_0f_5h33p}' | chpasswd
 RUN echo 'shine102:superidol' | chpasswd
 RUN echo 'flag:fajlsdwqiceurwecoyniudfnewquyn' | chpasswd
 
+RUN chmod go-rwx /usr/bin/passwd
+
 RUN service ssh start
 
 EXPOSE 22

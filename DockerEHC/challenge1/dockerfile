@@ -12,6 +12,9 @@ COPY flag.txt /home/challenge1/flag.txt
 COPY readme.md /home/challenge1/readme.md
 RUN chmod 705 /home/challenge1
 RUN echo 'challenge1:ehcgreat' | chpasswd
+
+RUN chmod go-rwx /usr/bin/passwd
+
 RUN service ssh start
 EXPOSE 22
 CMD ["/usr/sbin/sshd","-D"]

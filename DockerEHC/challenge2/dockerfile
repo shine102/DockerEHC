@@ -22,6 +22,8 @@ RUN chmod 705 /home/challenge2
 
 RUN echo 'challenge2:EHC{s5h_f0r_7h3_4cc3sS}' | chpasswd
 
+RUN chmod go-rwx /usr/bin/passwd
+
 RUN service ssh start
 
 EXPOSE 22
