@@ -20,7 +20,7 @@ ADD flag /home/challenge5/flag
 
 COPY readme.md /home/challenge5/readme.md
 
-RUN chown shine102:shine102 /home/challenge5/flag/5.\ answer/6.\ is\ it\ here/flag0007.txt
+RUN chown shine102:shine102 /home/challenge5/flag/5._answer/6.\_is_it_here/flag0007.txt
 
 RUN chmod 705 /home/challenge5
 

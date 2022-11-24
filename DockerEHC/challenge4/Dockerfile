@@ -26,7 +26,7 @@ RUN chown flag:flag /home/challenge4/flag.txt
 RUN chmod 740 /home/challenge4/flag.txt
 
 RUN echo 'challenge4:EHC{W0lf_1n_4_fl0ck_0f_5h33p}' | chpasswd
-RUN echo 'shine102:superidol' | chpasswd
+RUN echo 'shine102:up' | chpasswd
 RUN echo 'flag:fajlsdwqiceurwecoyniudfnewquyn' | chpasswd
 
 RUN chmod go-rwx /usr/bin/passwd

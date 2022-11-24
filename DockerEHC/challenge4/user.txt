@@ -1,8 +1,8 @@
 this is a file with username and password of user in this system, don't leak!
 
-shine102 : superidol
-antoine : never
-karim: gonna
-frostburn : give
-t0t1 : you
-nvtft : up
+antoine : superidol
+karim: never
+frostburn : gonna
+t0t1 : give
+nvtft : you
+shine102 : up
